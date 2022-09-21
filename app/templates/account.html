@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'css/finalout.css' %}">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        html,body{
+            height: 400vh;
+            font-family:  cursive;
+        }
+        .accountimage{
+            width: 500px;
+            height: 350px;
+            position: relative;
+            left: -85px;
+        }
+        div a{
+            text-decoration: none;
+            {% comment %} border: 1px solid black; {% endcomment %}
+        }
+        div a h1{
+            color:#4fcdd8;
+            border:1px solid black;
+            border-radius : 25px;
+        }
+        div a #delete{
+            color:#ff4444;
+        }
+        .login-form{
+            padding-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="if-login">
+        <h1>
+            <b><a href="{% url 'backindex' name %}">X</a></b>
+        </h1>
+    </div>
+    <div class="login">
+        <form class="login-form">
+            <label for=""><h2>User name </h2><p>{{packinfo.u_name}}</p></label><br>
+            <label for=""><h2>Phone number </h2><p>{{packinfo.u_phone}}</p></label><br>
+            <label for=""><h2>Destination name </h2><p> {{subdestination.d_name}} {{maindestination.d_name}}</p></label><br>
+            <label for=""><h2>destination image </h2></label>
+            <img src="{{maindestination.d_image}}"
+            class="accountimage">
+            <img src="{{subdestination.d_image}}" class="accountimage" >
+            <label for=""><h2>Hotel Name </h2><p>{{hotelinfo.h_name}}</p></label><br>
+            <label for=""><h2>Hotel Image</h2> </label>
+            <img src="{{hotelinfo.h_image}}"
+            class="accountimage"><br>
+            <label for=""><h2>Guid name </h2><p>{{guidinfo.g_name}}</p></label><br>
+            <label for=""><h2>Guid Image</h2></label>
+            <img src="{{guidinfo.g_image}}" class="accountimage"><br>
+            <br><br><br><br><br>
+            <div><a href="{% url 'delete' name %}"><h1 id='delete' >Delete Pack</h1></a>
+            <br><a href="{% url 'index' %}"><h1>LogOut</h1></a></div>
+        </form>
+
+    </div>
+</body>
+</html>

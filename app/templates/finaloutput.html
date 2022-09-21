@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'css/finalout.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        html,body{
+            height: 400vh;
+            font-family:  cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="if-login">
+        <h1>
+            <b><a href="{% url 'backindex' name %}">X</a></b>
+        </h1>
+    </div>
+    <div class="login">
+        <form  method="POST" class="login-form" action=''>
+            <b>succefuly payment Transfer</b><br><br>
+            <p>Your TRAVEL pack is update</p><br>
+            <p>Our Services is open for you </p><br>
+            <h2>Thank You </h2>
+            </div>
+        </form>
+    </div>
+    <div class="error">
+        <p></p>    
+    </div>
+</body>
+</html>
+

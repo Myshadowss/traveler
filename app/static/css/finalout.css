@@ -1,0 +1,208 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom,#a8ebff 0%, #b0f6ff 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login{
+    width: 50%;
+    height: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.login-form h1{
+    text-align: center;
+    /* border-bottom: 1px solid silver; */
+}
+.login-form{
+    padding: 30px 35%;
+    background-color: white;
+    text-align: center;
+    width: 295px;
+}
+.labels{
+    padding: 25px ;
+    text-align: center;
+}
+.labels label{
+    font-size: 20px;
+    font-weight: 600;
+}
+.labels input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: auto;
+    height: 25px;
+}
+.conform{
+    text-align: center;
+    position: relative;
+    justify-content: center;
+}
+.conform input{
+    padding: 8px 30px ;
+    background-color: #33ccff;
+    border-radius: 20px;
+    margin-bottom: 25px ;
+}
+.conform a{
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+}
+.conform a:hover{
+    border-bottom: 1px solid silver;
+}
+.if-login{
+    text-align: end;
+    padding: 100px 250px;
+}
+.if-login a{
+    color: black;
+    text-decoration: none;
+}
+.error{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.error p{
+    color: black;
+    z-index: 10;
+}
+
+.resultpack{
+    text-align: left;
+}
+
+
+/* display page  */
+
+.displaydetails{
+    width: auto;
+    height: auto;
+    
+}
+.displaydetails .place-name{
+    width: auto;
+    height: 50px;
+    text-align: center;
+    line-height: 100px;
+}
+.displayblock{
+    margin-top: 30px;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    /* background-color: aqua; */
+}
+.displayimage{
+    margin: 100px;
+    margin-top: 50px;
+    width: auto;
+    height: 500px;
+    /* border: 1px solid black; */
+}
+.mainimage{
+    width: 50%;
+    height: 485px;
+    /* border: 1px solid black; */
+    float: left;
+}
+.mainimage img{
+    width: 100%;
+    height: 100%;
+}
+.secondimage{
+    width: 25%;
+    height: 240px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin: 0%;
+}
+.secondimage img{
+    width: 100%;
+    height: 100%;
+}
+.lastimage{
+    width: 20%;
+    height: 485px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin: 0%;
+}
+.lastimage img{
+    width: 100%;
+    height: 100%;
+}
+.comonfooter{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(239, 243, 245);
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+ 
+}
+.comonfooter2{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(239, 243, 245);
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+    position: relative;
+}
+.comonfooter p{
+    color: rgb(0, 0, 0);
+}
+#logos{
+    display: inline-flex;
+
+    list-style-type: none;
+}
+#logos li{
+    margin: 10px;
+}
+.copylogo{
+    color: rgb(0, 0, 0);
+    display: inline-flex;
+}
+
+.updatetable{
+    width: auto;
+    height: 500px;
+    /* background: linear-gradient(to bottom, #33ccff 0%, #ccffff 100%); */
+
+}
+.updatetable form{
+    background:#c8ffff;
+    width: auto;
+    height: inherit;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 60px;
+}
+.updatetable input{
+    width: auto;
+    height: 22px;
+}
+.updatetable #updateconfirm{
+    background-color: transparent;
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+

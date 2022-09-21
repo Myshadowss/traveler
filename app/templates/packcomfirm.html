@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'css/finalout.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        html,body{
+            height: 400vh;
+            font-family:  cursive;
+        }
+        div a{
+            text-decoration: none;
+            {% comment %} border: 1px solid black; {% endcomment %}
+        }
+        div a h1{
+            color:#4fcdd8;
+            border:1px solid black;
+            border-radius : 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="if-login">
+        <h1>
+            <b><a href="{% url 'backindex' name %}">X</a></b>
+        </h1>
+    </div>
+    <div class="login">
+        <form  method="POST" class="login-form" action=''>
+            <b>You have No Travel Packege is Here </b><br><br>
+            <p>Create and update your travel plans</p><br>
+            <h2>Thank You </h2>
+            <br><div><a href="{% url 'index' %}"><h1>LogOut</h1></a></div>
+            
+        </form>
+    </div>
+    <div class="error">
+        <p></p>    
+    </div>
+</body>
+</html>
+

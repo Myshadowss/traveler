@@ -1,0 +1,103 @@
+.img-responsive{
+    width: 265px;
+    height: 200px;
+    
+}
+
+#guide-image{
+    width: 255px;
+    height: 170px;
+}
+.about-center{
+    padding-left: 256px;
+}
+.navbar-light{
+    border-radius: 0%;
+}
+
+.g-nav{
+    font-size:initial
+}
+#register{
+    padding-left: 165px;
+    padding-top: 10px;
+}
+
+/* error print registration and login  */
+
+#error-print{
+    color:  red;
+    background-color: rgb(255, 178, 178);
+    padding: 10px 15px;
+    border-radius: 2px;
+}
+
+
+/* shop section */
+
+
+
+.shop_section .row {
+    margin-top: 100px;
+    background-color: #ffffff;
+  }
+  
+  .shop-detail {
+    padding: 50px;
+    width: 600px;
+  }
+  
+  .shop-detail h5 {
+    color: #000000;
+    font-size: 22px;
+  }
+  
+  .shop-detail p {
+    color: rgb(24, 25, 25);
+  }
+  
+  .shop_img-box {
+    position: relative;
+    margin-top: -380px;
+    margin-left: 700px;
+    margin-bottom: 50px;
+    padding: 60px;
+    z-index: 10;
+  }
+  .shop_img-box img{
+      width: 560px;
+      height: 375px;
+      z-index: 10;
+  }
+  
+  
+  .layout_padding {
+      padding: 75px 0;
+  }
+  .heading_style {
+      border-left: 12px solid #78cffd;
+      font-size: 40px;
+      padding-left: 3px;
+      font-weight: lighter;
+      color: #0a0057;
+    }
+  
+    /* end shop section */
+
+
+
+    .tourism{
+      width: auto;
+      padding: 100px;
+      display: inline-flex;
+      background-color: white
+    }
+    .tourism p{
+      width: 550px;
+      margin: 25px;
+    }
+    .tourism img{
+      margin: 25px;
+      width: 700px;
+      height: 300px;
+    }
